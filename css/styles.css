@@ -1,0 +1,173 @@
+/* --- basic reset for entire page --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* --- Begin of Header style rules --- */
+header {
+  display: flex;
+  padding: 0.8rem 3.8rem;
+  background-color: #d3d3d37c;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.logo span {
+  color: red;
+}
+.nav-menu-mobile {
+  display: none;
+}
+.nav-menu {
+  padding-right: 6rem;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu li {
+  padding: 0 1.5rem;
+}
+.nav-menu a {
+  font-size: 1.1rem;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+}
+.mobile-menu {
+  display: none;
+}
+/* --- End of Header style rules --- */
+
+/* --- Begin of Hero section style rules ---  */
+
+.hero {
+  margin: 0.8rem 2.8rem;
+  width: auto;
+  height: 400px;
+  background-color: rgba(197, 197, 190, 0.63);
+  border-radius: 50px 0 50px 0;
+  line-height: 1.8rem;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+/* --- End of Hero section style rules ---  */
+
+/* --- Begin of Project Sections style rules ---  */
+
+.sections-container {
+  display: grid;
+  padding: 2rem 3rem;
+}
+.sections {
+  padding: 2rem 2rem;
+  background-color: rgba(204, 204, 204, 0.349);
+  margin: 1rem 0;
+}
+.sections h2 {
+  color: brown;
+}
+.sections p {
+  line-height: 1.5rem;
+  text-align: left;
+  margin: 1.2rem 0;
+}
+
+/* --- End of Project Sections style rules ---  */
+
+/* --- @media Mobile display styles for small screens--- */
+@media screen and (max-width: 550px) {
+  header {
+    padding: 0.5rem 1.8rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 3.3rem;
+    right: 2.6rem;
+    background-color: #d3d3d3;
+    padding: 2rem 2.5rem;
+  }
+  .nav-mobile-menu li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    margin: 0;
+  }
+  .nav-mobile-menu a {
+    text-decoration: none;
+    color: #000;
+  }
+  .nav-mobile-menu a:hover {
+    color: rgb(80, 77, 212);
+    font-weight: bold;
+  }
+  .mobile-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-menu li {
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 0.5rem 2.8rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-menu li {
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+/* Tablet display style
+@media screen and (max-width: 900px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .nav-menu a {
+    padding: 0;
+    font-size: 0.8rem;
+  } */
